@@ -80,7 +80,7 @@ main span {
 /* Footer style */
 
 footer {
-    position: absolute;
+    margin-top: 25rem;
     overflow: scroll;
     bottom: 0;
     width: 100%;
@@ -116,6 +116,10 @@ footer {
    article {
     font-size: 12px;
    } 
+
+   footer {
+    font-size: 12px;
+   }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 1024px) {
@@ -132,4 +136,7 @@ footer {
         font-size: 16px;
        }
 
+    footer {
+        font-size: 16px;
+    }
 }
