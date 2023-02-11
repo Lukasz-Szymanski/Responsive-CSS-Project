@@ -17,6 +17,7 @@
 
 /* Header and Nav style */
 
+
 header {
     padding: 20px;
     display: flex;
@@ -30,11 +31,6 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul.show {
-    display: flex;
-    flex-direction: column;
 }
 
 nav li {
@@ -65,6 +61,7 @@ main {
     margin: 5rem;
     gap: 5em;
     text-align: justify;
+    flex: 1;
 }
 article {
     font-size: 18px;
@@ -80,7 +77,16 @@ main span {
 
 
 
+/* Footer style */
 
+footer {
+    position: absolute;
+    overflow: scroll;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
 
 
 
@@ -97,17 +103,33 @@ main span {
 
 /* Responsive Web Design */
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
    .logo {
     width: 2rem;
    }
-   nav ul {
-    display: none;
-   }
 
-   .hamburger {
-    display: block;
-    cursor: pointer;
-   }
+   nav li {
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+   article {
+    font-size: 12px;
+   } 
+}
+
+@media only screen and (min-width: 425px) and (max-width: 1024px) {
+    .logo {
+        width: 2.5rem;
+       }
+      
+       nav li {
+        margin-right: 16px;
+        font-size: 16px;
+    }
+    
+       article {
+        font-size: 16px;
+       }
 
 }
