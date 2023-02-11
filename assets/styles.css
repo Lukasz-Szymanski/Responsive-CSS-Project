@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--Responsive-CSS-Project-1-hexColor);
+}
+
+
+:root {
+--Responsive-CSS-Project-1-hexColor: #4DBEF7;
+--Responsive-CSS-Project-2-hexColor: #43CCD9;
+--Responsive-CSS-Project-3-hexColor: #56F0D1;
+--Responsive-CSS-Project-4-hexColor: #43D990;
+--Responsive-CSS-Project-5-hexColor: #4DF775;
+}
+
+
+/* Header and Nav style */
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.hamburger {
+    color: white;
+    display: none;
+}
+
+
+/* Main style */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    gap: 5em;
+    text-align: justify;
+}
+article {
+    font-size: 18px;
+}
+
+main span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Web Design */
+
+@media screen and (max-width: 425px) {
+   .logo {
+    width: 2rem;
+   }
+   nav ul {
+    display: none;
+   }
+
+   .hamburger {
+    display: block;
+    cursor: pointer;
+   }
+
+}
